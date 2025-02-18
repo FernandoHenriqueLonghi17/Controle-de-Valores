@@ -1,0 +1,75 @@
+/* Container da lista de transações */
+.cost-list {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+/* Título da seção de transações */
+h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+/* Container da lista com fundo cinza */
+.list-container {
+  background: #f5f5f5;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+/* Mensagem quando não há transações */
+.no-costs {
+  text-align: center;
+  color: #666;
+  padding: 20px;
+}
+
+/* Item individual da lista de transações */
+.cost-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Indicador visual do tipo de transação */
+.cost-item.entrada {
+  border-left: 4px solid #42b883; /* Verde para entradas */
+}
+
+.cost-item.saida {
+  border-left: 4px solid #ff7675; /* Vermelho para saídas */
+}
+
+/* Informações da transação */
+.cost-info h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #2c3e50;
+}
+
+/* Data da transação */
+.date {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Valor da transação */
+.amount {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Cores dos valores por tipo */
+.entrada .amount {
+  color: #42b883; /* Verde para entradas */
+}
+
+.saida .amount {
+  color: #ff7675; /* Vermelho para saídas */
+}

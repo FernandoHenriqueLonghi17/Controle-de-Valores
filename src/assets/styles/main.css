@@ -1,0 +1,67 @@
+/* Estilos globais da aplicação */
+body {
+  margin: 0;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: #f0f2f5;
+  color: #2c3e50;
+}
+
+/* Container principal da aplicação */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Título principal */
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+/* Grid de resumo financeiro */
+.summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+/* Cartões de resumo */
+.summary-item {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.summary-item h3 {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  color: #666;
+}
+
+.summary-item p {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Cores específicas para cada tipo de transação */
+.summary-item.entrada p {
+  color: #42b883; /* Verde para valores positivos */
+}
+
+.summary-item.saida p {
+  color: #ff7675; /* Vermelho para valores negativos */
+}
+
+.summary-item.saldo p {
+  color: #42b883;
+}
+
+.summary-item.saldo.negative p {
+  color: #ff7675;
+}
