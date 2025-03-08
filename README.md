@@ -69,13 +69,23 @@ Estrutura do Projeto
 Copy
 .
 ├── public/                  # Arquivos estáticos
+
 ├── src/
 │   ├── assets/              # Recursos estáticos (imagens, estilos)
+
 │   ├── components/          # Componentes Vue
+
 │   ├── lib/                 # Configurações do Supabase
+
 │   ├── types/               # Tipos TypeScript
+
 │   ├── App.vue              # Componente principal
+
 │   └── main.ts              # Ponto de entrada da aplicação
+
 ├── .env                     # Variáveis de ambiente
+
 ├── package.json             # Dependências e scripts
+
 └── vite.config.ts           # Configuração do Vite
+
