@@ -1,91 +1,101 @@
-Sistema de Controle Financeiro
-Aplicação de controle financeiro pessoal desenvolvida com Vue.js e Supabase para gerenciar entradas e saídas de dinheiro.
+# Sistema de Controle Financeiro
 
-Tecnologias Utilizadas
-Frontend:
+Um aplicativo web para controle financeiro pessoal desenvolvido com Vue 3, TypeScript e Vite. O sistema permite registrar entradas e saídas financeiras, visualizar o saldo atual e acompanhar o histórico de transações.
 
-Vue.js (v3) com Composition API.
+## 🚀 Funcionalidades
 
-TypeScript para tipagem estática.
+- Registro de transações (entradas e saídas)
+- Cálculo automático de saldo
+- Visualização do total de entradas e saídas
+- Histórico completo de transações
+- Armazenamento local dos dados
+- Interface responsiva e amigável
 
-Supabase para autenticação e banco de dados.
+## 🛠️ Tecnologias Utilizadas
 
-Vite para build e desenvolvimento.
+- Vue 3 - Framework JavaScript progressivo
+- TypeScript - Superset tipado do JavaScript
+- Vite - Build tool e dev server
+- LocalStorage - Para persistência local dos dados
+- CSS Modular - Para estilização dos componentes
 
-Backend:
+## 📋 Pré-requisitos
 
-Supabase (autenticação e banco de dados).
+- Node.js (versão 14 ou superior)
+- npm (geralmente vem com Node.js)
 
-Estilos:
+## 🔧 Instalação
 
-CSS puro com escopo por componente.
+1. Clone o repositório:
+```bash
+git clone [url-do-repositorio]
+```
 
-Como Rodar a Aplicação
-Pré-requisitos
-Node.js (v18 ou superior).
+2. Acesse a pasta do projeto:
+```bash
+cd sistema-controle-financeiro
+```
 
-Conta no Supabase.
-
-Passos para Executar
-Clone o repositório:
-
-bash
-Copy
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
-cd nome-do-repositorio
-Instale as dependências:
-
-bash
-Copy
+3. Instale as dependências:
+```bash
 npm install
-Configure o Supabase:
+```
 
-Crie um projeto no Supabase.
-
-Crie uma tabela costs com a estrutura:
-
-Ative a autenticação por email/senha.
-
-Obtenha as credenciais (URL e chave pública) no painel do Supabase.
-
-Configure as variáveis de ambiente:
-
-Crie um arquivo .env na raiz do projeto:
-
-env
-Copy
-VITE_SUPABASE_URL=sua-url-do-supabase
-VITE_SUPABASE_KEY=sua-chave-publica-do-supabase
-Inicie o servidor de desenvolvimento:
-
-bash
-Copy
+4. Inicie o servidor de desenvolvimento:
+```bash
 npm run dev
-Acesse a aplicação:
+```
 
-Abra o navegador e acesse: http://localhost:5173.
+## 🖥️ Estrutura do Projeto
 
-Estrutura do Projeto
-Copy
-.
-├── public/                  # Arquivos estáticos
+```
+src/
+├── assets/         # Arquivos estáticos e estilos CSS
+├── components/     # Componentes Vue reutilizáveis
+├── lib/           # Funções utilitárias e serviços
+├── types/         # Definições de tipos TypeScript
+└── App.vue        # Componente raiz da aplicação
+```
 
-├── src/
-│   ├── assets/              # Recursos estáticos (imagens, estilos)
+### Componentes Principais
 
-│   ├── components/          # Componentes Vue
+- `App.vue` - Componente principal que gerencia o estado da aplicação
+- `CostForm.vue` - Formulário para adicionar novas transações
+- `CostList.vue` - Lista de transações com detalhes
 
-│   ├── lib/                 # Configurações do Supabase
+### Estilos
 
-│   ├── types/               # Tipos TypeScript
+Os estilos estão organizados em arquivos CSS separados:
+- `main.css` - Estilos globais
+- `form.css` - Estilos específicos para formulários
+- `list.css` - Estilos para a lista de transações
 
-│   ├── App.vue              # Componente principal
+## 📦 Build para Produção
 
-│   └── main.ts              # Ponto de entrada da aplicação
+Para gerar a versão de produção:
 
-├── .env                     # Variáveis de ambiente
+```bash
+npm run build
+```
 
-├── package.json             # Dependências e scripts
+Os arquivos otimizados serão gerados na pasta `dist/`.
 
-└── vite.config.ts           # Configuração do Vite
+## 🤝 Contribuindo
 
+1. Faça um fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
+3. Faça commit das suas alterações (`git commit -m 'Add some AmazingFeature'`)
+4. Faça push para a branch (`git push origin feature/AmazingFeature`)
+5. Abra um Pull Request
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT - veja o arquivo [LICENSE.md](LICENSE.md) para detalhes.
+
+## ✨ Próximos Passos
+
+- [ ] Adicionar categorias para transações
+- [ ] Implementar filtros por data
+- [ ] Adicionar gráficos de análise
+- [ ] Exportação de relatórios
+- [ ] Temas claro/escuro
